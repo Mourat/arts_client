@@ -10,6 +10,7 @@
 .arts{
     display: flex;
     gap: 10px;
+    padding-bottom: 60px;
 }
 
 .art{
@@ -27,23 +28,20 @@ img{
     background-color: #CBEEE3;
 }
 
-.delete{
-    border: 1px solid #F5BFBF;
+.delete, .update{
     padding: 3px 6px;
-    background-color: white;
     cursor: pointer;
-    color: #F20A64;
     text-decoration: none;
     font-size: 14px;
+    background-color: white;
+}
+.delete{
+    border: 1px solid #F5BFBF;
+    color: #F20A64;
 }
 .update{
     border: 1px solid #CCCCF3;
-    padding: 3px 6px;
-    background-color: white;
-    cursor: pointer;
     color: #8B8BEA;
-    text-decoration: none;
-    font-size: 14px;
 }
 
 .form{
@@ -65,4 +63,14 @@ input {
     color: white;
     cursor: pointer;
     font-weight: bold;
+}
+
+.addBtn{
+    border: 1px solid #26668b;
+    padding: 6px 9px;
+    background-color: #32759f;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
 }

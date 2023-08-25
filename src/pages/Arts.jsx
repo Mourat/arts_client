@@ -36,13 +36,13 @@ const Arts = () => {
                         <h2 className="">{art.title}</h2>
                         <p className="">{art.desc}</p>
                         <span className="">{art.price}&nbsp;{process.env.REACT_APP_CURRENCY}</span>
-                        <Link className="delete" onClick={() => handleDelete(art.id)}>Delete</Link>
+                        <Link className="delete" to="" onClick={() => handleDelete(art.id)}>Delete</Link>
                         <Link className="update" to={`/update/${art.id}`}>Update</Link>
 
                     </div>
                 ))}
             </div>
-            <Link className="btn btn-primary mt-4" to="/add">Add new Art</Link>
+            <Link className="addBtn" to="/add">Add new Art</Link>
         </div>
     )
 }
